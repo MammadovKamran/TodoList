@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <!-- Bootstrap CSS -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" crossorigin="anonymous">
+  <title>Document</title>
+
+  <style>
+    ::selection {
+      background-color: yellow;
+    }
+    .text-muted {
+      font-size: 1.2rem;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="text-muted" >Todo List</h1>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <form action="#" class="form-group" id="todo-form">
+              <input class="form-control" type="text" name="todo-input" placeholder="Bir Todo Girin"
+                aria-label="default input example" id="todo-input" />
+              <button type="submit" class="btn btn-danger mt-3">
+                Todo Ekleyin
+              </button>
+
+          </div>
+          <div class="col-sm-3">
+              <div class="form-group">
+                <select name="todo" id="todo" title="todo-selector" class="form-control">
+                    <option value="gym">Gym</option>
+                    <option value="shop">Shop</option>
+                    <option value="edu">Education</option>
+                </select>
+              </div>
+          </div>
+          </form>
+          <div class="col-sm-12">
+            <hr id="hr-unknown" />
+        </div>
+      </div>
+
+
+    </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-12">
+            <hr />
+          </div>
+          <h2 class="text-muted" style="font-size: 1.7rem">Todolar</h2>
+          <div class="col-sm-6">
+            <form action="#" class="form-group">
+              <input id="filter" class="form-control" type="text" placeholder="Bir Todo Arayın" aria-label="filter" />
+            </form>
+          </div>
+          <div class="col-sm-12">
+            <hr />
+            <ul class="list-group">
+                    <!-- <li class="list-group-item d-flex text-danger justify-content-between">
+                 paramsTodo
+                 <a href="#">
+                 <i class="bi bi-file-x"></i>
+                 </a>
+          </li> -->
+            </ul>
+            <hr />
+          </div>
+        </div>
+        <button class="btn btn-dark" id="clear-todos">
+          Tüm Taskları Temizle
+        </button>
+        <button class="btn btn-danger" id="filter">Secilmis Tasklari Temizle</button>
+      </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
